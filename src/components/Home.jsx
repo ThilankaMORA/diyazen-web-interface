@@ -6,6 +6,7 @@ import RobotState from "./RobotState";
 import Map from "./Map";
 import Camera from "./Camera";
 import { Color } from "three";
+import TeleopKey from "./TeleopKey";
 
 class Home extends Component {
   state = {};
@@ -42,6 +43,7 @@ class Home extends Component {
               <Camera />
             </Col>
           </Row>
+          <div><TeleopKey/></div>
         </Container>
       </div>
     );
