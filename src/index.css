@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('../public/diyazen2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+main {
+  min-height: 80vh;
+}
+
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding-bottom: 60px;
+}
+
+header {
+  padding-left: 20px;
+}
+
+.alert-custom-red {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: red;
+  font-weight: bold;
+}
+
+.alert-custom-green {
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  color: green;
+  font-weight: bold;
+}
+
+.state-box {
+  padding-left: 20px;
+  padding-top: 35px;
+  padding-bottom: 35px;
+  color: black;
+  background-color: rgb(200, 220, 236);
+  border: 1px;
+  border-radius: 10px;
+  opacity: 0.9;
+  /* margin-top: 8px; */
+}
+
+.text-box{
+  background-color: rgb(200, 220, 236); 
+  border: 1px;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.text-white-{
+  color: aliceblue;
+}
+
+.joystick{
+  position: fixed;
+  bottom: 8vh;
+  left: 85vw;
+  opacity: 0.8;
+}
