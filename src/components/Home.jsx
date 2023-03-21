@@ -7,6 +7,8 @@ import Map from "./Map";
 import Camera from "./Camera";
 import { Color } from "three";
 import TeleopKey from "./TeleopKey";
+import Battery from "./Battery";
+import SelectColor from "./SelectColor";
 
 class Home extends Component {
   state = {};
@@ -41,6 +43,14 @@ class Home extends Component {
             </Col>
             <Col>
               <Camera />
+            </Col>
+          </Row>
+          <Row>
+            <Col>
+            <SelectColor/>
+            </Col>
+            <Col>
+              <Battery/>
             </Col>
           </Row>
           <div><TeleopKey/></div>
