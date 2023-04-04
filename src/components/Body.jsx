@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
-import About from "./About";
+import About from "./Places";
 import Home from "./Home";
 
 function Body() {

@@ -9,55 +9,59 @@ import { Color } from "three";
 import TeleopKey from "./TeleopKey";
 import Battery from "./Battery";
 import SelectColor from "./SelectColor";
+import PlaceForm from "./PlaceForm";
 
-class Home extends Component {
-  state = {};
-
-  render() {
-    return (
-      <div>
-        <Container>
-          <div className="text-box"><h1 className="text-center mt-3">Robot Control Page</h1></div>
-          <Row>
-            <Col>
-              <Connection />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <Teleoperation />
-            </Col>
-            <Col>
-             <h4 className="text-white">Map Viewer</h4>
-            </Col>
-            <Col>
+function Home() {
+  return (
+    <div>
+      <Container>
+        <div className="text-box">
+          <h1 className="text-center mt-3">Robot Control Page</h1>
+        </div>
+        <Row>
+          <Col>
+            <Connection />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <Teleoperation />
+          </Col>
+          <Col>
+            <h4 className="text-white">Map Viewer</h4>
+          </Col>
+          <Col>
             <h4 className="text-white">Camera Feed</h4>
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-              <RobotState/>
-            </Col>
-            <Col>
-              <Map />
-            </Col>
-            <Col>
-              <Camera />
-            </Col>
-          </Row>
-          <Row>
-            <Col>
-            <SelectColor/>
-            </Col>
-            <Col>
-              <Battery/>
-            </Col>
-          </Row>
-          <div><TeleopKey/></div>
-        </Container>
-      </div>
-    );
-  }
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <RobotState />
+          </Col>
+          <Col>
+            <Map />
+          </Col>
+          <Col>
+            <Camera />
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <SelectColor />
+          </Col>
+          <Col>
+            <Battery />
+          </Col>
+        </Row>
+        <Row>
+          <PlaceForm/>
+        </Row>
+        <div>
+          <TeleopKey />
+        </div>
+      </Container>
+    </div>
+  );
 }
 
 export default Home;
