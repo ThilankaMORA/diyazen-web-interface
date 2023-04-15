@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 import Connection from "./Connection";
 import Teleoperation from "./Teleoperation";
 import { Row, Col, Container } from "react-bootstrap";
 import RobotState from "./RobotState";
 import Map from "./Map";
 import Camera from "./Camera";
-import { Color } from "three";
 import TeleopKey from "./TeleopKey";
 import Battery from "./Battery";
 import SelectColor from "./SelectColor";
-import PlaceForm from "./PlaceForm";
 
 function Home() {
   return (
@@ -52,9 +50,6 @@ function Home() {
           <Col>
             <Battery />
           </Col>
-        </Row>
-        <Row>
-          <PlaceForm/>
         </Row>
         <div>
           <TeleopKey />
