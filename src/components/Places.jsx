@@ -9,7 +9,7 @@ function Places() {
     <div>
       <Row>
         <Col>
-          <h4 id="navigation">Robot navigation</h4>
+          <h4 id="navigation">Location navigation</h4>
         </Col>
         <Col>
           <PlaceForm />
