@@ -3,6 +3,8 @@ import { Row, Col } from "react-bootstrap";
 import PlaceForm from "./PlaceForm";
 import PlaceList from "./PlaceList";
 import Map from "./Map";
+import Teleoperation from "./Teleoperation";
+import TeleopKey from "./TeleopKey";
 
 function Places() {
   return (
@@ -23,6 +25,8 @@ function Places() {
           <PlaceList />
         </Col>
       </Row>
+      <Teleoperation/>
+      <TeleopKey/>
     </div>
   );
 }

@@ -16,7 +16,7 @@ function Teleoperation() {
   
     var cmd_vel = new window.ROSLIB.Topic({
         ros: ros,
-        name: Config.CMD_VEL_TOPIC,
+        name: Config.CMD_VEL_TOPIC_JOY,
         messageType: "geometry_msgs/Twist"
     });
   
@@ -32,7 +32,9 @@ function Teleoperation() {
             z: -event.x/2,
         },
     });
+    
     cmd_vel.publish(twist);
+    
   }
   
   function handleStop(event){
@@ -40,7 +42,7 @@ function Teleoperation() {
   
     var cmd_vel = new window.ROSLIB.Topic({
         ros: ros,
-        name: Config.CMD_VEL_TOPIC,
+        name: Config.CMD_VEL_TOPIC_JOY,
         messageType: "geometry_msgs/Twist"
     });
   

@@ -21,7 +21,7 @@ function PlaceForm() {
     });
 
     var message = new window.ROSLIB.Message({
-      data: "add "+text
+      data: "add,"+text
     });
 
     db_cmd.publish(message);
@@ -41,7 +41,7 @@ function PlaceForm() {
   return (
     <Form onSubmit={handleSubmit}>
       <Form.Label id = "placeform" ClassName="text-muted">
-        Add Place >>   
+        Add Place &gt;&gt;     
         <input type="text" value={text} onChange={handleChange} />
       </Form.Label>
       <Button id = "formbutton" type="submit">Add</Button>

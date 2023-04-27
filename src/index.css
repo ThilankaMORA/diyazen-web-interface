@@ -107,3 +107,25 @@ h4 {
   margin-top: 15px;
   color: aliceblue;
 }
+
+#battery{
+  margin-left: 1150px;
+  margin-top: 10px;
+}
+
+.navbar-arimac_logo{
+  width: 60px;
+  margin-right: 90px;
+}
+
+.navbar-diyazen_logo{
+  width: 70px;
+  margin-right: 10px;
+}
+
+#navbar{
+  opacity: 0.8;
+  height: 48px;
+  color: #0f0f0f;
+}
+

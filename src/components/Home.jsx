@@ -14,7 +14,7 @@ function Home() {
     <div>
       <Container>
         <div className="text-box">
-          <h1 className="text-center mt-3">Robot Control Page</h1>
+          <h1 className="text-center mt-3">DIYAZEN Control Interface</h1>
         </div>
         <Row>
           <Col>
@@ -48,7 +48,7 @@ function Home() {
             <SelectColor />
           </Col>
           <Col>
-            <Battery />
+            
           </Col>
         </Row>
         <div>

@@ -15,7 +15,7 @@ function TeleopKey() {
   if (teleop == null) {
     var teleop = new window.KEYBOARDTELEOP.Teleop({
       ros: ros,
-      topic: "/cmd_vel",
+      topic: Config.CMD_VEL_TOPIC,
     });
   }
 
